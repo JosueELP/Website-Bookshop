@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/validations.js"></script>
+    <title>Librería Anonymous</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div>
+          <img
+            src="../imgs/logo.png"
+            width="182"
+            height="50"
+            id="logo"
+            alt="logo de librería anonymous"
+          />
+        </div>
+        <div class="flex-row" id="navbar-options">
+          <a href="../index.html" class="button button-gray-content">Inicio</a>
+          <a href="./explore.html" class="button button-gray-content"
+            >Explorar</a
+          >
+          <a href="./shop.html" class="button button-gray-content">Carrito</a>
+          <a href="./login-form.html" class="button green-400" id="login-button"
+            >Iniciar sesión</a
+          >
+          <a href="./register-form.html" class="button green-400"
+            >Registrarse</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <section class="main">
+      <!-- Books content -->
+      <div class="flex-column books-section">
+        <h2
+          class="font-subtitle font-normal margin-auto gray-400"
+          id="subcontent-title"
+        >
+          Explorar <span class="font-bold green-300">libros</span>
+        </h2>
+        <div class="books">
+          <!-- Libro 1 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/41vePvjajvL._SX307_BO1,204,203,200_.jpg"
+                alt="portada del libro de 1984"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">George Orwell</p>
+                  <p class="green-300 font-bold" id="book-name">1984</p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  Para controlar todo no basta con apropiarse solo de la
+                  voluntad y de la conciencia de los individuos hay que hacerse
+                  dueño de su lenguaje. En 1984 encontramos al líder único cuya
+                  presencia es antes que nada una abstracción, la negación del
+                  individuo, la sustracción de la información: el Big Brother.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 2 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/romeo.jpg"
+                alt="portada del libro de Romeo y Julieta de William Shakespeare"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">William Shakespeare</p>
+                  <p class="green-300 font-bold" id="book-name">
+                    Romeo y Julieta
+                  </p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  En Verona, dos jóvenes enamorados, de dos familias enemigas,
+                  son víctimas de una situación de odio y violencia que ni
+                  desean ni pueden remediar. En una de esas tardes de verano en
+                  que el calor "inflama la sangre", Romeo, recién casado en
+                  secreto con su amada Julieta, mata al primo de ésta.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 3 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/mujercitas.jpg"
+                alt="portada del libro de Mujercitas, por Louisa May Alcott"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">Louisa May Alcott</p>
+                  <p class="green-300 font-bold" id="book-name">Mujercitas</p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  El señor March se ha marchado a la guerra y sus cuatro hijas
+                  deben quedarse en casa con su madre, su tía y sus amigos, en
+                  medio del bullicio de la vida burguesa de Nueva Inglaterra.
+                  Meg, Beth, Amy y Jo, las cuatro hermanas March viven y sufren
+                  lo más complicado de todo, crecer.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 3 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/odisea.jpg"
+                alt="portada del libro de la Odisea, por Homero"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">Homero</p>
+                  <p class="green-300 font-bold" id="book-name">La Odisea</p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  La Odisea es un poema épico, que originalmente consta de unos
+                  10.000 versos divididos en 24 cantos. Homero, el rapsoda
+                  griego, fue quien recitó las hazañas de un joven ”fecundo en
+                  ardides” llamado Odiseo sintetizando el mundo clásico de los
+                  griegos, su mitología y costumbres.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 4 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/frank.jpg"
+                alt="portada del libro de Frankenstein, por Mary Shelley"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">Mary Shelley</p>
+                  <p class="green-300 font-bold" id="book-name">Frankenstein</p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  Esta espeluznante novela de terror gótico es una de las
+                  historias más inquietantes de todos los tiempos. Relata los
+                  trágicos acontecimientos de la vida del joven médico
+                  Frankenstein y las terribles consecuencias de su intento de
+                  crear vida artificial.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 5 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/alicia.jpg"
+                alt="portada del libro de Alicia en el País de las Maravillas, por Lewis Caroll"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">Lewis Caroll</p>
+                  <p class="green-300 font-bold" id="book-name">
+                    Alicia en el País de las Maravillas
+                  </p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  Alicia cae en la madriguera del conejo, menguando o creciendo
+                  sin descanso y contemplando cómo cobran vida fantásticos
+                  objetos inanimados en un mundo de fantasía que se aparta de lo
+                  considerado “normal” y que pone a prueba la imaginación del
+                  lector.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 6 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/gatsby.jpg"
+                alt="portada del libro del gran Gatsby, por Francis Scott Fitszgerald"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">Francias Scott F.</p>
+                  <p class="green-300 font-bold" id="book-name">
+                    El gran Gatsby
+                  </p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  Jay Gatsby, el caballero que reina sobre West Egg, es el
+                  arquetipo de aquellos míticos años veinte en que pareció que
+                  todo era posible. Junto al resto de los protagonistas,
+                  representa a la Generación Perdida, a todos aquellos jóvenes
+                  que personificaron el mito de la pasión y el desamor.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 7 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/conde.jpg"
+                alt="portada del libro del conde de Montecristo, por Alejandro Dumas"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">Alejandro Dumas</p>
+                  <p class="green-300 font-bold" id="book-name">
+                    El conde de Montecristo
+                  </p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  Un enigmático personaje comienza a acechar a sus enemigos y
+                  éstos ignoran de quién se trata y por qué lo hace. Es el conde
+                  de Montecristo, un hombre que estuvo preso injustamente
+                  durante 14 años y que ahora regresa para cobrar su venganza.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 8 -->
+          <div class="book-card">
+            <div class="image-book">
+              <img
+                src="../imgs/books/naranja.jpg"
+                alt="portada del libro de la naranja mecánica, por Anthony Burgess"
+              />
+            </div>
+            <div class="book-content">
+              <div class="book-header">
+                <div id="book-title">
+                  <p class="gray-400" id="book-author">Anthony Burgess</p>
+                  <p class="green-300 font-bold" id="book-name">
+                    La naranja mecánica
+                  </p>
+                </div>
+                <p class="button green-400">Disponible</p>
+              </div>
+              <div class="book-description">
+                <p class="gray-500">
+                  La historia se desarrolla en el Reino Unido en un futuro
+                  distópico marcado por la violencia y el autoritarismo.
+                  Alexander Delarge, el protagonista, lidera una banda de
+                  jóvenes marginales que esparce el caos a través de actos de
+                  violencia injustificados.
+                </p>
+              </div>
+              <div class="book-button">
+                <a href="#" class="button green-300">Ver más</a>
+                <a onclick="bookCounter()" class="button-inverse button-green400-content pointer white"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom wave -->
+      <div class="custom-shape-divider-bottom-1615599261">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <a href="./shop.html" class="float-button font-bold white">
+        <img src="../imgs/books.svg" alt="Icono de libros" width="30" height="30" class="margin-right">
+        <p><span id="book-counter">0</span> / 3</p>
+      </a>
+    </section>
+  </body>
+</html>

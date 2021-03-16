@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Librería Anonymous</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div>
+          <img
+            src="../imgs/logo.png"
+            width="182"
+            height="50"
+            id="logo"
+            alt="logo de librería anonymous"
+          />
+        </div>
+        <div class="flex-row" id="navbar-options">
+          <a href="../index.html" class="button button-gray-content">Inicio</a>
+          <a href="./explore.html" class="button button-gray-content"
+            >Explorar</a
+          >
+          <a href="./shop.html" class="button button-gray-content">Carrito</a>
+          <a href="./login-form.html" class="button green-400" id="login-button"
+            >Iniciar sesión</a
+          >
+          <a href="./register-form.html" class="button green-400"
+            >Registrarse</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <section class="main">
+      <!-- main content -->
+      <div class="flex-column books-section">
+        <h2
+          class="font-subtitle font-normal margin-auto gray-400"
+          id="subcontent-title"
+        >
+          Carrito de <span class="font-bold green-300">pedidos</span>
+        </h2>
+
+        <div class="shop-container">
+          <!-- Libro solicitado 1 -->
+          <div class="shop-card">
+            <div id="book-title">
+              <p class="gray-400" id="book-author">George Orwell</p>
+              <p class="green-300 font-bold" id="book-name">1984</p>
+            </div>
+            <p class="button green-400">Disponible</p>
+          </div>
+
+          <!-- Libro solicitado 2 -->
+          <div class="shop-card">
+            <div id="book-title">
+              <p class="gray-400" id="book-author">Lewis Caroll</p>
+              <p class="green-300 font-bold" id="book-name">
+                Alicia en el País de las Maravillas
+              </p>
+            </div>
+            <p class="button green-400">Disponible</p>
+          </div>
+
+          <!-- Libro solicitado 3 -->
+          <div class="shop-card">
+            <div id="book-title">
+              <p class="gray-400" id="book-author">Francias Scott F.</p>
+              <p class="green-300 font-bold" id="book-name">El gran Gatsby</p>
+            </div>
+            <p class="button green-400">Disponible</p>
+          </div>
+
+          <!-- Tarjeta de solicitud -->
+          <div class="shop-card" id="check-card">
+            <div id="book-title">
+              <p class="gray-400" id="book-author">Lapso de tiempo</p>
+              <div class="time-buttons">
+                <form
+                  action="./login-form.html"
+                  method="post"
+                  id="checkin-form"
+                >
+                  <select name="timelapse" class="time-select" required>
+                    <option value="w">1 Semana</option>
+                    <option value="5">5 días</option>
+                    <option value="3">3 días</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <input
+              type="submit"
+              form="checkin-form"
+              value="Hacer pedido"
+              class="button-inverse button-green400-content white pointer font-bold"
+              id="checkin-button"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Bottom wave -->
+      <div class="custom-shape-divider-bottom-1615599261">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+  </body>
+</html>
